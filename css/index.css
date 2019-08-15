@@ -256,3 +256,11 @@ img {
   justify-content: space-between;
   align-items: baseline;
 }
+.introcontent {
+  padding-top: 20px;
+  border-bottom: 2px solid #C0C0C0;
+  border-style: dashed;
+}
+.introcontent .topa {
+  padding-bottom: 20px;
+}
