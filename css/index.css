@@ -168,6 +168,14 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+  }
+}
 .topnav {
   border-bottom: dashed solid black;
   padding-right: 150px;
@@ -179,7 +187,14 @@ img {
   border-bottom: 2px solid #C0C0C0;
   border-style: dashed;
 }
-.topnav .clicknav {
+@media (max-width: 500px) {
+  .topnav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.clicknav {
   font-size: 1.6rem;
   padding-top: 35px;
   width: 350px;
@@ -188,7 +203,13 @@ img {
   padding-right: 30px;
   justify-content: space-around;
 }
-.topnav .sitename {
+@media (max-width: 500px) {
+  .clicknav {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.sitename {
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -248,14 +269,6 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
-}
-.topbar {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  background: blue;
-  justify-content: space-between;
-  align-items: baseline;
 }
 .introcontent {
   padding-top: 20px;

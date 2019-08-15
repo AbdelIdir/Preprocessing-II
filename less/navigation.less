@@ -3,7 +3,7 @@
 
 
     .topnav{ 
-        
+       
         border-bottom: dashed solid black;
         padding-right: 150px;
         padding-left: 150px;
@@ -11,9 +11,18 @@
         justify-content: space-between;
         border-bottom-width: 600px;
         border-bottom-color: black;
-        
-        border-bottom: 2px solid #C0C0C0;
+        border-bottom: 2px solid @silver;
         border-style: dashed;
+@media  (max-width:@mobileBreakpoint){
+    
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    
+}
+    
+	
         
         .clicknav{
             font-size: 1.6rem;
@@ -23,10 +32,16 @@
             flex-direction: row;
             padding-right: 30px;
             justify-content: space-around;
+
+            @media  (max-width:@mobileBreakpoint){
+               
+                display:flex;
+                justify-content: space-around;
+            }
     
         }
         .sitename{
             padding-top: 20px;
             padding-bottom: 20px;
         }
-    }
+    
