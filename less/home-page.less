@@ -1,24 +1,57 @@
 .home {
 
+  
+
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    @media (max-width:@mobileBreakpoint){
+        display:flex;
+      flex-direction: row;
+      
+      
+        width:100%;
+        justify-content: center;
+    }
+
+
+
+
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media (max-width:@mobileBreakpoint){
+       width:100%;
+       align-items:center;
+      
+       
     }
-
+  }
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media (max-width:@mobileBreakpoint){
+       width: 100%;
+       display:flex;
+       justify-content: center;
+
+      }
 
       img {
         border-radius: 10px;
+        @media(max-width:@mobileBreakpoint){
+          width:100%;
+          padding-left: 0px;
+          padding-right: 0px;
+          margin-right: 0px;
+          margin-left: 0px;
+         }
+
       }
     }
   }
@@ -26,22 +59,36 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media (max-width:@mobileBreakpoint){
+      display:flex;
+      flex-direction: column-reverse;
+      
+      
+   }
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+     
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
+    @media (max-width:@mobileBreakpoint){
+     
+      margin: 0 auto;
+      width:100%;
+      padding-bottom: 30px;
+    }
+    
     img {
       border-radius: 10px;
     }
@@ -53,9 +100,49 @@
     display: flex;
     justify-content: space-between;
 
+    @media(max-width:@mobileBreakpoint){
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      width:100%;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media(max-width:@mobileBreakpoint){
+        width:75%;
+      }
     }
   }
 }// home
+
+
+
+.introcontent{
+  padding-top: 20px;
+  border-bottom: 2px solid @silver;
+  border-style: dashed;
+  .topa{
+    padding-bottom: 20px;
+  }
+}
+
+.btn{ 
+  border-radius: 10px;
+  color:white;
+  font-size: 22px;
+  height: 45px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background: #008080;
+  max-width:200px;
+  
+    @media(max-width:@mobileBreakpoint){
+      max-width:100%;
+      background: #17A2B8;
+  }
+}
+
