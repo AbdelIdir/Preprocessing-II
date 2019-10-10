@@ -8,8 +8,7 @@ html {
 
 html, body {
   font-family: 'Roboto', sans-serif;
-  
-  
+ 
 }
 
 h1, h2, h3, h4, h5 {
@@ -46,8 +45,29 @@ img {
   max-width: 800px;
   
   margin: 0 auto;
-  @media (max-width:@mobileBreakpoint){
+  @media @mobile{
 padding-right: 20px;
 padding-left: 20px;  }
 
 }
+
+
+
+
+
+body {
+    animation: color-change-2x 4s linear infinite alternate both;
+  
+}
+
+
+
+
+
+////////////////////////// animations:
+
+
+
+
+.bg-anim(@eastern-blue,@bgc2,@bgc3,yellow) ;
+    
