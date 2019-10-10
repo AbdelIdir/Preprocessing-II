@@ -1,20 +1,26 @@
+/////// animations
+
 .bg-anim(@bg1:@bgc1,@bg2:@bgc2,@bg3:@bgc3,@bg4) {
-    
-    @keyframes color-change-2x {
-        0% {
-            background: @bg1;
-        }
-
-        100% {
-            background: @bg2;
-        }
-
-        40% {
-            background: @bg3 ;
-        }
-
-        30% {
-            background: @bg4
-        }
+  @keyframes color-change-2x {
+    0% {
+      background: @bg1;
     }
-  };
+
+    100% {
+      background: @bg2;
+    }
+
+    40% {
+      background: @bg3;
+    }
+
+    30% {
+      background: @bg4;
+    }
+  }
+}
+
+.flexrow {
+  display: flex;
+  flex-direction: row;
+}
