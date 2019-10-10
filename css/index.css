@@ -401,6 +401,7 @@ body {
 form {
   border: 5px solid black;
   justify-content: center;
+  padding-left: 30px;
   padding-bottom: 20px;
   padding-top: 20px;
   display: flex;
@@ -424,4 +425,18 @@ span {
 }
 .comment-box {
   padding: 50px;
+  width: 40%;
+}
+@media (max-width: 500px), (max-width: 700px) {
+  .comment-box {
+    width: 90%;
+  }
+}
+.client-data {
+  width: 16%;
+}
+@media (max-width: 500px), (max-width: 700px) {
+  .client-data {
+    width: 70%;
+  }
 }
