@@ -1,3 +1,7 @@
+.flexrow {
+  display: flex;
+  flex-direction: row;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -119,7 +123,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -134,14 +138,14 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
 }
 h1 {
   font-size: 4rem;
@@ -173,12 +177,39 @@ img {
     padding-left: 20px;
   }
 }
+body {
+  animation: color-change-2x 4s linear infinite alternate both;
+}
+@media (max-width: 700px) {
+  body::before {
+    content: "Tablet view";
+  }
+}
+@media (max-width: 700px) and (max-width: 500px) {
+  body::before {
+    content: normal;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: #17a2b8;
+  }
+  100% {
+    background: green;
+  }
+  40% {
+    background: blue;
+  }
+  30% {
+    background: yellow;
+  }
+}
 .navholder {
   max-width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border-bottom: 2px solid #C0C0C0;
+  border-bottom: 2px solid #c0c0c0;
   border-style: dashed;
 }
 .topnav {
@@ -229,7 +260,7 @@ img {
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background: #FFEBCD;
+  background: #ffebcd;
 }
 .footer p {
   text-align: center;
@@ -286,7 +317,7 @@ img {
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
 }
 @media (max-width: 500px) {
   .home .inverse-content {
@@ -318,7 +349,7 @@ img {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed #c0c0c0;
   display: flex;
   justify-content: space-between;
 }
@@ -341,7 +372,7 @@ img {
 }
 .introcontent {
   padding-top: 20px;
-  border-bottom: 2px solid #C0C0C0;
+  border-bottom: 2px solid #c0c0c0;
   border-style: dashed;
 }
 .introcontent .topa {
@@ -358,9 +389,54 @@ img {
   background: #008080;
   max-width: 200px;
 }
+.btn:hover {
+  background-color: #ffae1a;
+}
 @media (max-width: 500px) {
   .btn {
     max-width: 100%;
-    background: #17A2B8;
+    background: #17a2b8;
+  }
+}
+form {
+  border: 5px solid black;
+  justify-content: center;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.lasth2 {
+  padding: 10px;
+}
+span {
+  padding: 0 5px 0;
+  font-size: 20px;
+}
+.form-button {
+  width: 20%;
+  font-size: 2.5rem;
+  margin: 0.5%;
+  background-color: pink;
+}
+.comment {
+  font-size: 30px;
+}
+.comment-box {
+  padding: 50px;
+  width: 40%;
+}
+@media (max-width: 500px), (max-width: 700px) {
+  .comment-box {
+    width: 90%;
+  }
+}
+.client-data {
+  width: 16%;
+}
+@media (max-width: 500px), (max-width: 700px) {
+  .client-data {
+    width: 70%;
   }
 }

@@ -6,19 +6,21 @@ html {
   font-size: 62.5%;
 }
 
-html, body {
-  font-family: 'Roboto', sans-serif;
-  
-  
+html,
+body {
+  font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Indie Flower', cursive;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Indie Flower", cursive;
 }
 
 h1 {
   font-size: 4rem;
-  
 }
 
 h2 {
@@ -44,10 +46,31 @@ img {
 
 .container {
   max-width: 800px;
-  
-  margin: 0 auto;
-  @media (max-width:@mobileBreakpoint){
-padding-right: 20px;
-padding-left: 20px;  }
 
+  margin: 0 auto;
+  @media @mobile {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
+
+body {
+  animation: color-change-2x 4s linear infinite alternate both;
+   @media @tablet {
+
+    &::before {
+      content: "Tablet view";
+    
+}
+
+@media @mobile {
+
+  &::before {
+    content: normal;
+  
+}
+   }}
+  }
+////////////////////////// animations:
+
+.bg-anim(@eastern-blue, @bgc2, @bgc3, yellow);
